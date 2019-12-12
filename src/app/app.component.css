@@ -6,9 +6,8 @@
   position:fixed;
   top: 20%;
   left: 30%;
+  right: 30%;
   text-align: center;
-  height: 60%;
-  width: 40%;
   background-color: white;
 }
 
@@ -45,6 +44,10 @@
   border-radius: 0px;
   width: 80%;
   font-size: 1.4em;
+}
+
+.register{
+  margin: 0;
 }
 
 .createAccountLink{

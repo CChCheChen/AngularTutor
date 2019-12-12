@@ -1,0 +1,52 @@
+.loginPanelContainer {
+  text-align: center;
+}
+
+.loginPanel{
+  position:fixed;
+  top: 20%;
+  left: 30%;
+  text-align: center;
+  height: 60%;
+  width: 40%;
+  background-color: white;
+}
+
+.loginPanelInnerContainer{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.loginPanelInnerContainer input::placeholder {
+  color: #B7B7B7;
+  font-size: 1.3em;
+}
+.loginPanelInnerContainer input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.loginPanelDiv{
+  padding-bottom: 5%;
+}
+
+.loginPanelInput{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  width: 80%;
+  border: none transparent;
+  background-color: #F2F2F2;
+}
+
+.loginPanelButton{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 0px;
+  width: 80%;
+  font-size: 1.4em;
+}
+
+.createAccountLink{
+  color: #9FC1A7;
+}

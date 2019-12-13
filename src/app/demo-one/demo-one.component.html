@@ -1,0 +1,33 @@
+<h3>Component Example</h3>
+<p>Server (with ID {{serverId}}) is {{serverStatus}}</p>
+<p>{{'ServerX'}} (with ID {{serverId}}) is {{serverStatus}}</p>
+<p>Server (with ID {{serverId}}) is {{getServerStatus()}}</p>
+<hr>
+
+<h3>Counter Example</h3>
+<p>{{counter}}</p>
+<button class="btn btn-primary" (click)="counterAddOne()" style="margin-right: 20px">Add 1</button>
+<button class="btn btn-primary" (click)="counterReset()">Reset</button>
+<hr>
+
+<h3>Data 2-Way binding Example - ngIf</h3>
+<div>
+  <span>UserName:</span>
+  <input type="text" [(ngModel)]="userName">
+</div>
+<div>
+  <span>Password:</span>
+  <input type="password">
+</div>
+<div *ngIf="isLogin">You Logged-in as {{userName}}</div>
+<button class="btn btn-primary" (click)="userLogin()" style="margin-right: 20px">Log In</button>
+<button class="btn btn-primary" (click)="userLogout()">Log Out</button>
+<hr>
+
+<h3>Data loop Example - ngFor</h3>
+<div *ngFor="let student of students">
+  <div>
+    <div class="ngForTable"><span>Student Name : </span> <span>{{student.name}}</span></div>
+    <div class="ngForTable"><span>Student Major: </span> <span>{{student.major}}</span></div>
+  </div>
+</div>

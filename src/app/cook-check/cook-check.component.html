@@ -1,0 +1,35 @@
+<div class="cookCheckContainer col-6 offset-3">
+  <div class="cookCheckSection">
+    <h3>Sushi Judge</h3>
+    <p>---Check if your ingredients can make a sushi---</p>
+  </div>
+
+  <div class="cookCheckSection">
+    <div class="ingredientsRow">
+      <button class="btn btn-light" (click)="addIngredients('Salmon'); checkForRecommend()">Salmon</button>
+      <button class="btn btn-light" (click)="addIngredients('Tuna'); checkForRecommend()">Tuna</button>
+      <button class="btn btn-light" (click)="addIngredients('Eel'); checkForRecommend()">Eel</button>
+      <button class="btn btn-light" (click)="addIngredients('Sushi Rice'); checkForRecommend()">Sushi Rice</button>
+      <button class="btn btn-light" (click)="addIngredients('Soy Sauce'); checkForRecommend()">Soy Sauce</button>
+      <button class="btn btn-light" (click)="addIngredients('Wasabi'); checkForRecommend()">Wasabi</button>
+    </div>
+    <div class="actionsRow">
+      <button class="btn btn-success" (click)="resetIngredients()">Reset Your Ingredients</button>
+    </div>
+  </div>
+
+  <div  class="cookCheckSection">
+    <h5>Your Current Ingredients:</h5>
+    <div *ngFor="let ingredient of currIngredients">
+      <span>{{ingredient.name}}</span>
+
+      <span> - amount:{{ingredient.amount}}</span>
+    </div>
+
+    <h5>Our Recommendation:</h5>
+    <div>
+      {{recommendation}}
+      <div *ngIf="isSushi"><img src="../../assets/thumb-right.jpg"></div>
+    </div>
+  </div>
+</div>

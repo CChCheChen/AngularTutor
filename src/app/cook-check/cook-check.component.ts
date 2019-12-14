@@ -85,13 +85,13 @@ export class CookCheckComponent implements OnInit {
       this.isSushi = false;
       let failRecommend = ['You need ']
       if(totalFish > amountSushiRice){
-        failRecommend.push((totalFish-amountSushiRice).toString() + 'more Sushi Rice');
+        failRecommend.push((totalFish-amountSushiRice).toString() + ' more Sushi Rice');
       }
       if(totalFish > amountSoySauce){
-        failRecommend.push((totalFish-amountSoySauce).toString() + 'more Soy Sauce');
+        failRecommend.push((totalFish-amountSoySauce).toString() + ' more Soy Sauce');
       }
       if(totalFish > amountWasabi){
-        failRecommend.push((totalFish-amountWasabi).toString() + 'more Wasabi');
+        failRecommend.push((totalFish-amountWasabi).toString() + ' more Wasabi');
       }
       this.recommendation = failRecommend.join();
     }
